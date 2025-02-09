@@ -12,11 +12,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4 text-white">
+    <nav className="fixed w-screen bg-blue-600 p-4 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold">My Profile</div>
+        <div className="text-lg font-bold"><a href="#profile">My Profile</a></div>
 
-        {/* Hamburger Menu Button (Visible on Mobile) */}
         <button
           className="md:hidden focus:outline-none"
           onClick={toggleMenu}
